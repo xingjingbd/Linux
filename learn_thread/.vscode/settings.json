@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "memory_resource": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp"
+    }
+}
