@@ -1,0 +1,6 @@
+1.在绑定端口和地址时，需要用htons将整型数据转化为网络字节顺序(unsigned short int[uint16])，即通过bingEndian方式存储(高字节存放在低地址),
+IP地址也需要通过htonl将本地地址转化为无符号整型数据(unsigned int[uint32])，也是通过BigEndian方式存储
+
+2.在接收到client连接时，通过inet_ntoa将网络地址以'.'间隔的字符串形式输出
+printf("receive a client , addr = %s \n", inet_ntoa(client_addr.sin_addr));
+==》receive a client , addr = 127.0.0.1
